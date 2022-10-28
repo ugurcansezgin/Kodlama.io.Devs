@@ -1,0 +1,14 @@
+package kodlama.io.Devs.business.abstracts;
+
+public interface LanguageService {
+	
+	List<Language> getAll();
+	
+	Language getId(int id);
+	
+	void add(Language language) throws Excepiton
+	
+	void delete(int id);
+	
+	void update(Language language);
+}

@@ -1,0 +1,10 @@
+package kodlama.io.Devs.business.concretes;
+
+import kodlama.io.Devs.business.abstracts.LanguageService;
+
+@Service
+public class LanguageManager implements LanguageService {
+	
+	
+
+}

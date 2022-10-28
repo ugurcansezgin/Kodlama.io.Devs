@@ -1,0 +1,22 @@
+package kodlama.io.Devs.dataAccess.concretes;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import kodlama.io.Devs.dataAccess.abstracts.LanguageRepository;
+
+@Repository
+public class InMemoryLanguageRepository implements LanguageRepository {
+
+	List<Language> languages;
+	
+	public InMemoryLanguageRepository() {
+		
+		languages = new ArrayList<Languages>();
+		languages.add(new Language(1, "C#"));
+		languages.add(new Language(2, "Python#"));
+		languages.add(new Language(3, "Java#"));
+	}
+	
+}
